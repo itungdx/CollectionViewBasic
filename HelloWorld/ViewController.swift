@@ -64,6 +64,11 @@ class ViewController: UIViewController {
             collectionView.setCollectionViewLayout(collectionViewFlowLayout, animated: true, completion: nil)
         }
     }
+    
+    @IBAction func swipeToRight(_ sender: UISwipeGestureRecognizer) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 }
 
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
