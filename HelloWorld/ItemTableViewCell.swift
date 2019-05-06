@@ -2,16 +2,14 @@
 //  ItemTableViewCell.swift
 //  HelloWorld
 //
-//  Created by iTung on 5/3/19.
+//  Created by iTung on 5/6/19.
 //  Copyright © 2019 iTung. All rights reserved.
 //
 
 import UIKit
 
 class ItemTableViewCell: UITableViewCell {
-
     @IBOutlet weak var nameCollectionView: UILabel!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

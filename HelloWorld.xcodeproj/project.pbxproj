@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		834DA1F8227BF39A005BDE1A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DA1F7227BF39A005BDE1A /* MenuViewController.swift */; };
-		834DA1FA227BF5F7005BDE1A /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DA1F9227BF5F7005BDE1A /* ItemTableViewCell.swift */; };
 		834DA1FC227C136C005BDE1A /* ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834DA1FB227C136C005BDE1A /* ItemCollectionViewCell.xib */; };
 		834DA1FE227C1B9C005BDE1A /* DogstagramNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DA1FD227C1B9C005BDE1A /* DogstagramNavigationController.swift */; };
-		834DA200227C31F2005BDE1A /* DogsPinterestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DA1FF227C31F2005BDE1A /* DogsPinterestViewController.swift */; };
 		836413862254AC2800FB9D7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836413852254AC2800FB9D7C /* AppDelegate.swift */; };
 		836413882254AC2800FB9D7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836413872254AC2800FB9D7C /* ViewController.swift */; };
 		8364138B2254AC2800FB9D7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 836413892254AC2800FB9D7C /* Main.storyboard */; };
 		8364138D2254AC2A00FB9D7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8364138C2254AC2A00FB9D7C /* Assets.xcassets */; };
 		836413902254AC2A00FB9D7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8364138E2254AC2A00FB9D7C /* LaunchScreen.storyboard */; };
+		836C6D5A227FE93E00E51AB3 /* DogsPinterestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836C6D59227FE93E00E51AB3 /* DogsPinterestViewController.swift */; };
+		836FB25E227FEF400044205A /* DogsPinterestNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836FB25D227FEF400044205A /* DogsPinterestNavigationViewController.swift */; };
+		836FB260227FEFED0044205A /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836FB25F227FEFED0044205A /* ItemTableViewCell.swift */; };
+		836FB26222801D1C0044205A /* DogsPinterestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836FB26122801D1C0044205A /* DogsPinterestCollectionViewCell.swift */; };
+		836FB264228028D60044205A /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836FB263228028D60044205A /* PinterestLayout.swift */; };
 		83DA66DB225595C80080611C /* HistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA66DA225595C80080611C /* HistoryItem.swift */; };
-		83DA66E32255B2330080611C /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DA66E22255B2330080611C /* HistoryTableViewCell.swift */; };
 		83F350642265AFFE00340DF2 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F350622265AFFE00340DF2 /* ItemCollectionViewCell.swift */; };
 		83F350672265BC7D00340DF2 /* ImageViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F350662265BC7D00340DF2 /* ImageViewerViewController.swift */; };
 		83F350692265C3AE00340DF2 /* LikeAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F350682265C3AE00340DF2 /* LikeAnimator.swift */; };
@@ -29,10 +31,8 @@
 		3CE24A24D0E063850E8D8510 /* Pods-HelloWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld.release.xcconfig"; path = "Target Support Files/Pods-HelloWorld/Pods-HelloWorld.release.xcconfig"; sourceTree = "<group>"; };
 		7EF6E5143E84104BB5067704 /* Pods-HelloWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld.debug.xcconfig"; path = "Target Support Files/Pods-HelloWorld/Pods-HelloWorld.debug.xcconfig"; sourceTree = "<group>"; };
 		834DA1F7227BF39A005BDE1A /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		834DA1F9227BF5F7005BDE1A /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		834DA1FB227C136C005BDE1A /* ItemCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		834DA1FD227C1B9C005BDE1A /* DogstagramNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogstagramNavigationController.swift; sourceTree = "<group>"; };
-		834DA1FF227C31F2005BDE1A /* DogsPinterestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DogsPinterestViewController.swift; path = Resource/DogsPinterestViewController.swift; sourceTree = "<group>"; };
 		836413822254AC2800FB9D7C /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		836413852254AC2800FB9D7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		836413872254AC2800FB9D7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,12 +40,16 @@
 		8364138C2254AC2A00FB9D7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8364138F2254AC2A00FB9D7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		836413912254AC2A00FB9D7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		836C6D59227FE93E00E51AB3 /* DogsPinterestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsPinterestViewController.swift; sourceTree = "<group>"; };
+		836FB25D227FEF400044205A /* DogsPinterestNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsPinterestNavigationViewController.swift; sourceTree = "<group>"; };
+		836FB25F227FEFED0044205A /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		836FB26122801D1C0044205A /* DogsPinterestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsPinterestCollectionViewCell.swift; sourceTree = "<group>"; };
+		836FB263228028D60044205A /* PinterestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
 		83DA66DA225595C80080611C /* HistoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryItem.swift; sourceTree = "<group>"; };
 		83DA66DE22559A940080611C /* SVN-Product Sans Bold Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SVN-Product Sans Bold Italic.ttf"; sourceTree = "<group>"; };
 		83DA66DF22559A940080611C /* SVN-Product Sans Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SVN-Product Sans Bold.ttf"; sourceTree = "<group>"; };
 		83DA66E022559A940080611C /* SVN-Product Sans Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SVN-Product Sans Italic.ttf"; sourceTree = "<group>"; };
 		83DA66E122559A940080611C /* SVN-Product Sans Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SVN-Product Sans Regular.ttf"; sourceTree = "<group>"; };
-		83DA66E22255B2330080611C /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		83F350622265AFFE00340DF2 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		83F350662265BC7D00340DF2 /* ImageViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerViewController.swift; sourceTree = "<group>"; };
 		83F350682265C3AE00340DF2 /* LikeAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeAnimator.swift; sourceTree = "<group>"; };
@@ -85,25 +89,51 @@
 		836413842254AC2800FB9D7C /* HelloWorld */ = {
 			isa = PBXGroup;
 			children = (
+				836FB25C227FEE8E0044205A /* DogsPinterest */,
+				836FB25A227FEDF40044205A /* Dogstagram */,
+				836FB25B227FEE5F0044205A /* Animator */,
 				83DA66DC22559A490080611C /* Resource */,
 				836413852254AC2800FB9D7C /* AppDelegate.swift */,
-				83F350662265BC7D00340DF2 /* ImageViewerViewController.swift */,
 				83DA66DA225595C80080611C /* HistoryItem.swift */,
-				836413872254AC2800FB9D7C /* ViewController.swift */,
 				836413892254AC2800FB9D7C /* Main.storyboard */,
 				834DA1FB227C136C005BDE1A /* ItemCollectionViewCell.xib */,
 				8364138C2254AC2A00FB9D7C /* Assets.xcassets */,
 				8364138E2254AC2A00FB9D7C /* LaunchScreen.storyboard */,
 				836413912254AC2A00FB9D7C /* Info.plist */,
-				83DA66E22255B2330080611C /* HistoryTableViewCell.swift */,
-				83F350622265AFFE00340DF2 /* ItemCollectionViewCell.swift */,
-				83F350682265C3AE00340DF2 /* LikeAnimator.swift */,
 				834DA1F7227BF39A005BDE1A /* MenuViewController.swift */,
-				834DA1F9227BF5F7005BDE1A /* ItemTableViewCell.swift */,
-				834DA1FD227C1B9C005BDE1A /* DogstagramNavigationController.swift */,
-				834DA1FF227C31F2005BDE1A /* DogsPinterestViewController.swift */,
+				836FB25F227FEFED0044205A /* ItemTableViewCell.swift */,
 			);
 			path = HelloWorld;
+			sourceTree = "<group>";
+		};
+		836FB25A227FEDF40044205A /* Dogstagram */ = {
+			isa = PBXGroup;
+			children = (
+				83F350622265AFFE00340DF2 /* ItemCollectionViewCell.swift */,
+				834DA1FD227C1B9C005BDE1A /* DogstagramNavigationController.swift */,
+				83F350662265BC7D00340DF2 /* ImageViewerViewController.swift */,
+				836413872254AC2800FB9D7C /* ViewController.swift */,
+			);
+			path = Dogstagram;
+			sourceTree = "<group>";
+		};
+		836FB25B227FEE5F0044205A /* Animator */ = {
+			isa = PBXGroup;
+			children = (
+				83F350682265C3AE00340DF2 /* LikeAnimator.swift */,
+			);
+			path = Animator;
+			sourceTree = "<group>";
+		};
+		836FB25C227FEE8E0044205A /* DogsPinterest */ = {
+			isa = PBXGroup;
+			children = (
+				836C6D59227FE93E00E51AB3 /* DogsPinterestViewController.swift */,
+				836FB25D227FEF400044205A /* DogsPinterestNavigationViewController.swift */,
+				836FB26122801D1C0044205A /* DogsPinterestCollectionViewCell.swift */,
+				836FB263228028D60044205A /* PinterestLayout.swift */,
+			);
+			path = DogsPinterest;
 			sourceTree = "<group>";
 		};
 		83DA66DC22559A490080611C /* Resource */ = {
@@ -266,15 +296,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				83F350672265BC7D00340DF2 /* ImageViewerViewController.swift in Sources */,
-				834DA1FA227BF5F7005BDE1A /* ItemTableViewCell.swift in Sources */,
+				836C6D5A227FE93E00E51AB3 /* DogsPinterestViewController.swift in Sources */,
 				83F350642265AFFE00340DF2 /* ItemCollectionViewCell.swift in Sources */,
 				836413882254AC2800FB9D7C /* ViewController.swift in Sources */,
 				836413862254AC2800FB9D7C /* AppDelegate.swift in Sources */,
 				834DA1FE227C1B9C005BDE1A /* DogstagramNavigationController.swift in Sources */,
+				836FB26222801D1C0044205A /* DogsPinterestCollectionViewCell.swift in Sources */,
 				83F350692265C3AE00340DF2 /* LikeAnimator.swift in Sources */,
-				83DA66E32255B2330080611C /* HistoryTableViewCell.swift in Sources */,
-				834DA200227C31F2005BDE1A /* DogsPinterestViewController.swift in Sources */,
+				836FB264228028D60044205A /* PinterestLayout.swift in Sources */,
 				83DA66DB225595C80080611C /* HistoryItem.swift in Sources */,
+				836FB25E227FEF400044205A /* DogsPinterestNavigationViewController.swift in Sources */,
+				836FB260227FEFED0044205A /* ItemTableViewCell.swift in Sources */,
 				834DA1F8227BF39A005BDE1A /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

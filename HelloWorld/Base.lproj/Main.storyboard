@@ -74,18 +74,120 @@
         <!--DogsPinterest-->
         <scene sceneID="D98-a6-6OA">
             <objects>
-                <viewController id="DA0-cd-Ugw" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DogsPinterestViewController" id="DA0-cd-Ugw" customClass="DogsPinterestViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uvm-sn-krs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LVP-Qg-cvY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iGj-rm-VuH">
+                                    <size key="itemSize" width="164" height="194"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DogsPinterestCollectionViewCell" id="GDD-TJ-xeN" customClass="DogsPinterestCollectionViewCell" customModule="HelloWorld" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="164" height="194"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="164" height="194"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aBM-7a-OPx">
+                                                    <rect key="frame" x="0.0" y="0.0" width="164" height="194"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y3S-2u-tny">
+                                                            <rect key="frame" x="0.0" y="0.0" width="164" height="144"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="Y3S-2u-tny" firstAttribute="top" secondItem="aBM-7a-OPx" secondAttribute="top" id="7db-hi-Uby"/>
+                                                        <constraint firstItem="Y3S-2u-tny" firstAttribute="leading" secondItem="aBM-7a-OPx" secondAttribute="leading" id="KPU-AJ-t7X"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Y3S-2u-tny" secondAttribute="bottom" constant="50" id="SVC-j1-Wm5"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Y3S-2u-tny" secondAttribute="trailing" id="VT2-Or-gwg"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="aBM-7a-OPx" secondAttribute="bottom" id="iF1-Z7-j7m"/>
+                                            <constraint firstItem="aBM-7a-OPx" firstAttribute="top" secondItem="GDD-TJ-xeN" secondAttribute="top" id="mDd-Zn-ZJl"/>
+                                            <constraint firstAttribute="trailing" secondItem="aBM-7a-OPx" secondAttribute="trailing" id="smb-8T-Ndi"/>
+                                            <constraint firstItem="aBM-7a-OPx" firstAttribute="leading" secondItem="GDD-TJ-xeN" secondAttribute="leading" id="xqJ-K0-eyy"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="containerView" destination="aBM-7a-OPx" id="xoE-5c-udn"/>
+                                            <outlet property="imgDog" destination="Y3S-2u-tny" id="Xgi-bi-ImG"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="LVP-Qg-cvY" secondAttribute="bottom" id="0yl-y9-nIM"/>
+                            <constraint firstItem="LVP-Qg-cvY" firstAttribute="top" secondItem="Uvm-sn-krs" secondAttribute="top" id="34w-A4-WCi"/>
+                            <constraint firstItem="LVP-Qg-cvY" firstAttribute="leading" secondItem="Uvm-sn-krs" secondAttribute="leading" id="3wg-pu-Xy8"/>
+                            <constraint firstItem="Aqs-JC-WwL" firstAttribute="trailing" secondItem="LVP-Qg-cvY" secondAttribute="trailing" id="6Yr-TT-MLz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Aqs-JC-WwL"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="aBJ-nq-J7f" appends="YES" id="d0X-ud-RKO"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="DogsPinterest" id="86F-c5-ZFS"/>
+                    <connections>
+                        <outlet property="collectionView" destination="LVP-Qg-cvY" id="eKg-dE-tNS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ez2-94-Ofu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="aBJ-nq-J7f">
+                    <connections>
+                        <action selector="swipeToRight:" destination="DA0-cd-Ugw" id="N8h-bb-XvP"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1073" y="853"/>
+            <point key="canvasLocation" x="1029.5999999999999" y="852.70935960591135"/>
+        </scene>
+        <!--Collection View Controller-->
+        <scene sceneID="Qwz-aP-GOT">
+            <objects>
+                <collectionViewController id="gFH-Cc-yzv" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Su6-R4-r80">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wGe-Wc-mee">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="8ed-ao-aaQ">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="gFH-Cc-yzv" id="IuM-AO-xyi"/>
+                            <outlet property="delegate" destination="gFH-Cc-yzv" id="fAU-JJ-fUT"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="4e0-ew-iXV"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0co-sQ-Mkd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2650.4000000000001" y="842.36453201970448"/>
         </scene>
         <!--Image Viewer View Controller-->
         <scene sceneID="HzM-I4-Z5g">
@@ -270,7 +372,7 @@
         <!--Dogstagram Navigation Controller-->
         <scene sceneID="7ay-6g-upI">
             <objects>
-                <navigationController storyboardIdentifier="DogstagramViewController" automaticallyAdjustsScrollViewInsets="NO" id="alL-GD-tGD" customClass="DogstagramNavigationController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="DogstagramNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="alL-GD-tGD" customClass="DogstagramNavigationController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" largeTitles="YES" id="WgH-xb-f3v">
                         <rect key="frame" x="0.0" y="44" width="375" height="96"/>
@@ -285,10 +387,10 @@
             </objects>
             <point key="canvasLocation" x="130.40000000000001" y="138.17733990147784"/>
         </scene>
-        <!--Dogs Pinterest Navigation Controller-->
+        <!--Dogs Pinterest Navigation View Controller-->
         <scene sceneID="KMc-qy-fdE">
             <objects>
-                <navigationController storyboardIdentifier="DogsPinterestViewController" automaticallyAdjustsScrollViewInsets="NO" id="ZIB-d9-yYf" customClass="DogsPinterestNavigationController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="DogsPinterestNavigationViewController" automaticallyAdjustsScrollViewInsets="NO" id="ZIB-d9-yYf" customClass="DogsPinterestNavigationViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" largeTitles="YES" id="rWK-oW-mVx">
                         <rect key="frame" x="0.0" y="44" width="375" height="96"/>
@@ -302,6 +404,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rmj-HQ-M5M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="130" y="853"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="R8w-8E-WwU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6sy-hx-o5i" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UZy-eu-dQt">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gFH-Cc-yzv" kind="relationship" relationship="rootViewController" id="Z9X-Gb-WYY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RNs-rB-Bge" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1708" y="842.36453201970448"/>
         </scene>
     </scenes>
     <resources>

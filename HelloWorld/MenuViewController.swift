@@ -31,11 +31,11 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 {
-            if let destinationVC = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "DogstagramViewController") as? DogstagramNavigationController {
+            if let destinationVC = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "DogstagramNavigationController") as? DogstagramNavigationController {
                 self.present(destinationVC, animated: true, completion: nil)
             }
         } else {
-            if let destinationVC = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "DogstagramViewController") as? DogstagramNavigationController {
+            if let destinationVC = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "DogsPinterestNavigationViewController") as? DogsPinterestNavigationViewController {
                 self.present(destinationVC, animated: true, completion: nil)
             }
         }
